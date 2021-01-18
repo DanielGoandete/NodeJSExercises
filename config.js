@@ -11,6 +11,6 @@ router.get('/', function(req,res){
 })
 
 app.use('/', router);
-app.listen(process.env.port || 3000);
+app.listen(process.env.port || 5500);
 console.log("Server is ok");
 
