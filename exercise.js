@@ -140,6 +140,19 @@ function excercise1() {
 // Example: If the user enters 3 for n then 1, 2 and 3, the program should display 6.
   function excercise7() {
 
-    alert('donee');
     
-  }
+    var letsGo = document.getElementById("letsGo").value;
+    var total = 0;
+    
+            
+            while(letsGo == 'yes'){
+                var addNumber = prompt("add one number");
+                alert('Sum is '+ addNumber);
+                total +=  addNumber;
+                var anotherNumber = prompt("do you want to add another number?");
+                if(anotherNumber != 'yes'){
+                    letsGo = 'no';
+                    alert('Sum is '+ total);
+                }
+            }
+    }
